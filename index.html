@@ -62,7 +62,338 @@
 
     <!-- Conteúdo principal -->
     <main class="pt-14 pb-20 min-h-screen">
-        <!-- TELAS -->
+        <section data-tela="principal" class="hidden">
+        <!-- HEADER / TOPO -->
+        <header class="bg-gradient-to-b from-yellow-400 via-yellow-300 to-yellow-100 px-4 pt-6 pb-4 rounded-b-3xl shadow-lg relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-red-500/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+            <div class="absolute bottom-0 left-0 w-24 h-24 bg-red-500/10 rounded-full translate-y-1/2 -translate-x-1/4"></div>
+            <div class="relative z-10">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center shadow-md">
+                        <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-black text-gray-900 leading-tight tracking-tight">Retiradas<br>Paraguai</h1>
+                        <p class="text-xs font-bold text-gray-700">Cesar • Fronteira Brasil-PAR</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 bg-white/70 backdrop-blur-sm rounded-full px-3 py-2 shadow-sm">
+                    <svg class="w-4 h-4 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    <span class="text-sm font-semibold text-gray-800">Atendemos todo o Brasil</span>
+                    <span class="bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">ONLINE</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="px-4 pt-5 pb-8 space-y-5 max-w-[375px] mx-auto">
+
+            <!-- BANNER PRINCIPAL -->
+            <div class="relative rounded-2xl overflow-hidden shadow-lg cursor-pointer" onclick="mostrarTela('principal')">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=750&h=350&fit=crop" alt="Centro de Ciudad del Este" class="w-full h-44 object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                    <span class="inline-block bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded mb-2">📦 RETIRADA NO PARAGUAI</span>
+                    <h2 class="text-white text-lg font-black leading-tight">Você compra, nós buscamos e entregamos na sua porta!</h2>
+                </div>
+            </div>
+
+            <!-- COMO FUNCIONA -->
+            <div>
+                <h3 class="text-base font-bold text-gray-800 mb-3 flex items-center gap-2">
+                    <span class="w-7 h-7 bg-yellow-400 rounded-lg flex items-center justify-center text-sm">⚡</span>
+                    Como Funciona
+                </h3>
+                <div class="space-y-2.5">
+                    <div class="bg-white border border-gray-100 rounded-xl p-3.5 flex gap-3 shadow-sm">
+                        <div class="w-9 h-9 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-blue-600 font-black text-sm">1</span>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-gray-800">Você combina com o vendedor</p>
+                            <p class="text-xs text-gray-500 mt-0.5">Compre pelo WhatsApp do vendedor no Paraguai</p>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-gray-100 rounded-xl p-3.5 flex gap-3 shadow-sm">
+                        <div class="w-9 h-9 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-purple-600 font-black text-sm">2</span>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-gray-800">Cesar retira na loja</p>
+                            <p class="text-xs text-gray-500 mt-0.5">Confirmamos pagamento e buscamos o produto</p>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-gray-100 rounded-xl p-3.5 flex gap-3 shadow-sm">
+                        <div class="w-9 h-9 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-green-600 font-black text-sm">3</span>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-gray-800">Receba em casa</p>
+                            <p class="text-xs text-gray-500 mt-0.5">Entregamos em todo o território brasileiro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUTOS / SERVIÇOS EM DESTAQUE -->
+            <div>
+                <h3 class="text-base font-bold text-gray-800 mb-3 flex items-center gap-2">
+                    <span class="w-7 h-7 bg-red-100 rounded-lg flex items-center justify-center text-sm">🛒</span>
+                    Produtos Mais Buscados
+                </h3>
+                <div class="grid grid-cols-2 gap-2.5">
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden cursor-pointer" onclick="principal_abrirCategoria('eletronicos')">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=220&fit=crop" alt="Eletrônicos" class="w-full h-28 object-cover">
+                            <span class="absolute top-2 left-2 bg-red-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded">🔥 TOP 1</span>
+                        </div>
+                        <div class="p-2.5">
+                            <p class="text-xs font-bold text-gray-800">Eletrônicos</p>
+                            <p class="text-[10px] text-gray-400">Celulares, notebooks, tablets...</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden cursor-pointer" onclick="principal_abrirCategoria('perfumes')">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=300&h=220&fit=crop" alt="Perfumes" class="w-full h-28 object-cover">
+                            <span class="absolute top-2 left-2 bg-red-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded">🔥 TOP 2</span>
+                        </div>
+                        <div class="p-2.5">
+                            <p class="text-xs font-bold text-gray-800">Perfumes</p>
+                            <p class="text-[10px] text-gray-400">Importados e nacionais</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden cursor-pointer" onclick="principal_abrirCategoria('calcados')">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&h=220&fit=crop" alt="Calçados" class="w-full h-28 object-cover">
+                            <span class="absolute top-2 left-2 bg-red-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded">🔥 TOP 3</span>
+                        </div>
+                        <div class="p-2.5">
+                            <p class="text-xs font-bold text-gray-800">Calçados</p>
+                            <p class="text-[10px] text-gray-400">Tênis, botas, sandálias...</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden cursor-pointer" onclick="principal_abrirCategoria('cosmeticos')">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=300&h=220&fit=crop" alt="Cosméticos" class="w-full h-28 object-cover">
+                            <span class="absolute top-2 left-2 bg-yellow-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded">⭐ NOVO</span>
+                        </div>
+                        <div class="p-2.5">
+                            <p class="text-xs font-bold text-gray-800">Cosméticos</p>
+                            <p class="text-[10px] text-gray-400">Skincare, maquiagem, cabelo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ANÚNCIO / PROMO -->
+            <div class="bg-gradient-to-r from-yellow-400 to-orange-400 rounded-2xl p-4 shadow-md relative overflow-hidden cursor-pointer" onclick="principal_abrirPromocao()">
+                <div class="absolute -right-4 -top-4 w-24 h-24 bg-white/20 rounded-full"></div>
+                <div class="absolute -right-2 -bottom-6 w-20 h-20 bg-white/15 rounded-full"></div>
+                <div class="relative z-10 flex items-center gap-3">
+                    <div class="text-3xl">🎉</div>
+                    <div>
+                        <p class="text-sm font-black text-gray-900">Frete grátis na primeira retirada!</p>
+                        <p class="text-xs font-semibold text-gray-800/80 mt-0.5">Consulte condições pelo WhatsApp</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SOBRE -->
+            <div>
+                <h3 class="text-base font-bold text-gray-800 mb-3 flex items-center gap-2">
+                    <span class="w-7 h-7 bg-blue-100 rounded-lg flex items-center justify-center text-sm">ℹ️</span>
+                    Quem Somos
+                </h3>
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-4">
+                    <div class="flex items-start gap-3 mb-3">
+                        <div class="w-14 h-14 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                            <svg class="w-8 h-8 text-gray-800" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-gray-900">Cesar Lima</p>
+                            <p class="text-xs text-gray-500">Foz do Iguaçu • PR</p>
+                            <p class="text-xs text-gray-500">Serviço na fronteira com o Paraguai</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Residente em Foz do Iguaçu, fronteira com o Paraguai, realizo retiradas de produtos comprados em lojas paraguaias. Estou disponível para buscar suas compras e entregar diretamente na sua casa, em qualquer cidade do Brasil.
+                    </p>
+                    <div class="flex items-center gap-1 mt-3 pt-3 border-t border-gray-100">
+                        <div class="flex -space-x-1">
+                            <span class="w-5 h-5 bg-yellow-400 rounded-full border-2 border-white"></span>
+                            <span class="w-5 h-5 bg-red-500 rounded-full border-2 border-white"></span>
+                            <span class="w-5 h-5 bg-blue-700 rounded-full border-2 border-white"></span>
+                        </div>
+                        <span class="text-[10px] font-medium text-gray-400">Brasil 🇧🇷 ↔ Paraguai 🇵🇾</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LOJAS ATENDIDAS -->
+            <div>
+                <h3 class="text-base font-bold text-gray-800 mb-3 flex items-center gap-2">
+                    <span class="w-7 h-7 bg-purple-100 rounded-lg flex items-center justify-center text-sm">🏪</span>
+                    Lojas Atendidas
+                </h3>
+                <div class="flex gap-2 overflow-x-auto pb-2 -mx-1 px-1 scrollbar-hide">
+                    <div class="bg-white border border-gray-100 rounded-xl px-3 py-2 flex-shrink-0 shadow-sm">
+                        <p class="text-xs font-bold text-gray-800">Shopping China</p>
+                        <p class="text-[10px] text-gray-400">Puerto Presidente Stroessner</p>
+                    </div>
+                    <div class="bg-white border border-gray-100 rounded-xl px-3 py-2 flex-shrink-0 shadow-sm">
+                        <p class="text-xs font-bold text-gray-800">Monalisa</p>
+                        <p class="text-[10px] text-gray-400">Centro — Cdte. Espinoza</p>
+                    </div>
+                    <div class="bg-white border border-gray-100 rounded-xl px-3 py-2 flex-shrink-0 shadow-sm">
+                        <p class="text-xs font-bold text-gray-800">Los Japoneses</p>
+                        <p class="text-[10px] text-gray-400">Puerto Presidente Stroessner</p>
+                    </div>
+                    <div class="bg-white border border-gray-100 rounded-xl px-3 py-2 flex-shrink-0 shadow-sm">
+                        <p class="text-xs font-bold text-gray-800">Outras lojas</p>
+                        <p class="text-[10px] text-gray-400">Consulte no WhatsApp</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AVALIAÇÕES -->
+            <div>
+                <h3 class="text-base font-bold text-gray-800 mb-3 flex items-center gap-2">
+                    <span class="w-7 h-7 bg-yellow-100 rounded-lg flex items-center justify-center text-sm">⭐</span>
+                    Avaliações
+                </h3>
+                <div class="space-y-2.5">
+                    <div class="bg-white rounded-xl p-3.5 border border-gray-100 shadow-sm">
+                        <div class="flex items-center justify-between mb-1.5">
+                            <div class="flex items-center gap-1.5">
+                                <div class="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <span class="text-xs font-bold text-blue-600">RM</span>
+                                </div>
+                                <span class="text-xs font-bold text-gray-800">Roberto Mendes</span>
+                            </div>
+                            <span class="text-[10px] text-gray-400">há 3 dias</span>
+                        </div>
+                        <div class="flex gap-0.5 mb-1.5">⭐⭐⭐⭐⭐</div>
+                        <p class="text-xs text-gray-600">"Retirei um iPhone 15 no Shopping China, Cesar entregou em Curitiba em 3 dias. Muito confiável!"</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-3.5 border border-gray-100 shadow-sm">
+                        <div class="flex items-center justify-between mb-1.5">
+                            <div class="flex items-center gap-1.5">
+                                <div class="w-7 h-7 bg-pink-100 rounded-full flex items-center justify-center">
+                                    <span class="text-xs font-bold text-pink-600">AF</span>
+                                </div>
+                                <span class="text-xs font-bold text-gray-800">Ana Ferreira</span>
+                            </div>
+                            <span class="text-[10px] text-gray-400">há 1 semana</span>
+                        </div>
+                        <div class="flex gap-0.5 mb-1.5">⭐⭐⭐⭐⭐</div>
+                        <p class="text-xs text-gray-600">"Comprei perfumes na Monalisa, tudo chegou perfeito. Super recomendo o serviço!"</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-3.5 border border-gray-100 shadow-sm">
+                        <div class="flex items-center justify-between mb-1.5">
+                            <div class="flex items-center gap-1.5">
+                                <div class="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center">
+                                    <span class="text-xs font-bold text-green-600">PL</span>
+                                </div>
+                                <span class="text-xs font-bold text-gray-800">Paulo Lima</span>
+                            </div>
+                            <span class="text-[10px] text-gray-400">há 2 semanas</span>
+                        </div>
+                        <div class="flex gap-0.5 mb-1.5">⭐⭐⭐⭐⭐</div>
+                        <p class="text-xs text-gray-600">"Ótimo atendimento! Sempre uso quando compro no Paraguai. Entrega sempre antes do prazo."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GALERIA DE FOTOS -->
+            <div>
+                <h3 class="text-base font-bold text-gray-800 mb-3 flex items-center gap-2">
+                    <span class="w-7 h-7 bg-pink-100 rounded-lg flex items-center justify-center text-sm">📸</span>
+                    Fotos
+                </h3>
+                <div class="flex gap-2.5 overflow-x-auto pb-2 -mx-1 px-1 scrollbar-hide">
+                    <img src="https://images.unsplash.com/photo-1569629743817-70d8db6c323b?w=200&h=200&fit=crop" alt="Cidade do Leste" class="w-28 h-28 rounded-xl object-cover flex-shrink-0 cursor-pointer" onclick="principal_verFoto(this)">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=200&h=200&fit=crop" alt="Loja Paraguai" class="w-28 h-28 rounded-xl object-cover flex-shrink-0 cursor-pointer" onclick="principal_verFoto(this)">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=200&h=200&fit=crop" alt="Shopping" class="w-28 h-28 rounded-xl object-cover flex-shrink-0 cursor-pointer" onclick="principal_verFoto(this)">
+                    <img src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?w=200&h=200&fit=crop" alt="Fronteira" class="w-28 h-28 rounded-xl object-cover flex-shrink-0 cursor-pointer" onclick="principal_verFoto(this)">
+                </div>
+            </div>
+
+            <!-- CTA WHATSAPP FIXO -->
+            <div class="bg-gradient-to-r from-green-500 to-green-600 rounded-2xl p-5 shadow-lg sticky bottom-0 -mx-1 mb-2" id="cta-whatsapp">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md flex-shrink-0">
+                        <svg class="w-7 h-7 text-green-600" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </div>
+                    <div class="flex-1">
+                        <p class="text-white text-sm font-bold">Fale direto com o Cesar</p>
+                        <p class="text-green-100 text-xs">Resposta rápida pelo WhatsApp</p>
+                    </div>
+                    <a href="https://wa.me/5545999999999?text=Ol%C3%A1%20Cesar!%20Vim%20pelo%20site%20e%20quero%20informa%C3%A7%C3%B5es%20sobre%20retirada%20no%20Paraguai" target="_blank" rel="noopener noreferrer" class="bg-white text-green-600 font-black text-xs px-4 py-2.5 rounded-xl shadow-md hover:bg-green-50 transition-colors flex-shrink-0">
+                        CHAMAR
+                    </a>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- MODAL FOTO -->
+        <div id="modal-foto" class="fixed inset-0 bg-black/90 z-50 hidden items-center justify-center p-6" onclick="principal_fecharModal()">
+            <button onclick="principal_fecharModal()" class="absolute top-4 right-4 text-white/80 hover:text-white w-10 h-10 flex items-center justify-center">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+            <img id="modal-foto-img" src="" alt="Ampliada" class="max-w-full max-h-[80vh] rounded-2xl object-contain">
+        </div>
+
+        <!-- TOAST -->
+        <div id="toast" class="fixed top-4 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-sm font-semibold px-5 py-3 rounded-xl shadow-xl z-50 hidden transition-all duration-300 opacity-0 translate-y-[-20px]">
+        </div>
+
+        <script>
+        function principal_abrirCategoria(cat) {
+            const nomes = {
+                eletronicos: 'Eletrônicos',
+                perfumes: 'Perfumes',
+                calcados: 'Calçados',
+                cosmeticos: 'Cosméticos'
+            };
+            principal_mostrarToast('📂 Categoria: ' + nomes[cat] + ' — entre em contato pelo WhatsApp!');
+            window.open('https://wa.me/5545999999999?text=Ol%C3%A1%20Cesar!%20Tenho%20interesse%20em%20' + encodeURIComponent(nomes[cat]) + ' %20comprados%20no%20Paraguai', '_blank');
+        }
+
+        function principal_abrirPromocao() {
+            principal_mostrarToast('🎉 Consulte condições da promo no WhatsApp!');
+            window.open('https://wa.me/5545999999999?text=Ol%C3%A1%20Cesar!%20Quero%20saber%20sobre%20a%20promo%C3%A7%C3%A3o%20de%20frete%20gr%C3%A1tis', '_blank');
+        }
+
+        function principal_verFoto(el) {
+            const modal = document.getElementById('modal-foto');
+            const img = document.getElementById('modal-foto-img');
+            img.src = el.src.replace('w=200&h=200', 'w=600&h=600');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function principal_fecharModal() {
+            const modal = document.getElementById('modal-foto');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function principal_mostrarToast(msg) {
+            const toast = document.getElementById('toast');
+            toast.textContent = msg;
+            toast.classList.remove('hidden');
+            toast.classList.remove('opacity-0', 'translate-y-[-20px]');
+            toast.classList.add('opacity-100', 'translate-y-0');
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'translate-y-[-20px]');
+                toast.classList.remove('opacity-100', 'translate-y-0');
+                setTimeout(() => toast.classList.add('hidden'), 300);
+            }, 3000);
+        }
+        </script>
+    </section>
+
+    <!-- TELAS -->
     </main>
 
     <!-- Navegação inferior -->
